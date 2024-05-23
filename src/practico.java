@@ -14,16 +14,19 @@ public class practico {
 class edad extends practico{
     //atributos
     int edad;
-    public edad(String Nombre, String Apellido, int id,int edad){
+    double estatura;
+    public edad(String Nombre, String Apellido, int id,int edad,double estatura){
         super(Nombre,Apellido,id);
         this.edad=edad;
+        this.estatura=estatura;
     }
     public void Mostrar(){
         System.out.println("Datos");
-        System.out.println("Nombre: ");
-        System.out.println("Apellido: ");
-        System.out.println("Id: ");
-        System.out.println("Edad: ");
+        System.out.println("Nombre: "+Nombre);
+        System.out.println("Apellido: "+Apellido);
+        System.out.println("Id: "+id);
+        System.out.println("Edad: "+ edad);
+        System.out.println("Estatura: "+estatura);
 
     }
 }
